@@ -2,6 +2,7 @@ package com.consistancy.app
 
 data class DayTask(
     val title: String,
-    val description: String,
+    val whatToDo: String,
+    val whyThisMatters: String,
     val resourceUrl: String
 )

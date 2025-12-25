@@ -1,5 +1,5 @@
 <resources>
     <color name="textPrimary">#FFFFFF</color>
-    <color name="textSecondary">#CCCCCC</color>
+    <color name="textSecondary">#BBBBBB</color>
     <color name="cardBackground">#1E1E1E</color>
 </resources>
