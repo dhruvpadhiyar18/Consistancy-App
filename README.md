@@ -1,57 +1,95 @@
-# 📱 Consistancy – Daily Career Learning App
+# 📆 Consistancy – 180 Day AI & Career Builder App
 
-Consistancy is a **career-focused Android app** designed to help learners build daily discipline in coding, problem-solving, and career skills — one day at a time.
+Consistancy is a focused productivity Android app designed to help learners stay consistent for **180 days** while building strong foundations in **Python, DSA, AI/ML, and career preparation**.
 
-It provides:
-- Daily task guidance
-- Career-focused Python & DSA topics
-- Direct learning resources
-- Milestones for motivation
-- Progress tracking (streak + countdown)
-- Daily reminders
-
-This project is built with **Kotlin & Android Studio** and is designed to be simple, effective, and consistent.
+No distractions. No overload. Just daily progress.
 
 ---
 
 ## 🚀 Features
 
-### 🔹 Daily Tasks
-✔ Python core concepts  
-✔ DSA problem focus  
-✔ Career-oriented learning content  
-✔ Upgradeable to AI/ML track
+### ✅ Daily Task System
+- 2 structured tasks per day
+- Calm, beginner-friendly progression
+- Tasks unlock only after completing previous days
 
-### 🔹 Resource Links
-Each task includes a **direct resource button** that opens:
-✔ YouTube lessons  
-✔ Official docs  
-✔ Website tutorials  
-… without leaving the app.
+### 💡 “Why This Matters”
+- Every task explains *why* it’s important
+- Builds clarity, not just completion
 
-### 🔹 Milestones System
-Progress badges for:
-🏅 Day 7 – Foundation Discipline  
-🥈 Day 30 – Core Python + DSA  
-🏆 Day 90 – AI/ML Track Started  
-🏆 Day 180 – Career Ready
+### 🔥 Streak & Progress Tracking
+- Daily streak counter
+- Progress bar across 180 days
+- Weekly consistency tracking
 
-### 🔹 Progress System
-✔ One day, one completion logic  
-✔ Streak tracking  
-✔ Countdown progress
+### 🏆 Milestones
+- Day 7 – Discipline Built
+- Day 30 – Python + DSA Foundation
+- Day 90 – AI/ML Track Started
+- Day 180 – Career Ready
 
-### 🔹 Daily Notification
-App reminds you daily at **8:00 AM** to complete your tasks.
+### 🌙 Dark Mode First
+- Clean dark UI
+- Eye-friendly for long-term usage
+
+### 🌐 Learning Resources
+- One-click access to curated learning links
+- In-app WebView (no browser switching)
 
 ---
 
-## 📸 App Screenshots
+## 🧠 Learning Roadmap
 
-<img width="436" height="941" alt="image" src="https://github.com/user-attachments/assets/8541caba-c46c-47b2-947a-2b6d4a9bc99b" />
+| Phase | Days | Focus |
+|-----|-----|------|
+| Foundation | 1–10 | Python basics & logic |
+| Core Skills | 11–30 | DSA + problem solving |
+| AI/ML Track | 31–90 | NumPy, Pandas, ML |
+| Advanced AI | 91–140 | DL, NLP, CV |
+| Career Phase | 141–180 | Projects, resume, interviews |
 
-<img width="422" height="946" alt="image" src="https://github.com/user-attachments/assets/3094e128-41ee-496f-90ea-1905fb5bb12f" />
+---
 
-<img width="418" height="969" alt="image" src="https://github.com/user-attachments/assets/4021592a-17c9-48af-b287-4892537bbcca" />
+## 📱 Screenshots
 
-<img width="416" height="942" alt="image" src="https://github.com/user-attachments/assets/232add35-6722-44af-9320-3e71c81cf2e9" />
+- Home Screen
+  <img width="1080" height="602" alt="Screenshot 1 – Home (Top)" src="https://github.com/user-attachments/assets/95ecb075-dd14-461a-9784-7c204cf02741" />
+
+- Task Cards
+  <img width="1080" height="1141" alt="Screenshot 2 – Task Cards" src="https://github.com/user-attachments/assets/19f5e479-e8b2-4e25-8b95-1dfec8ae0f9a" />
+
+- Why This Matters
+  <img width="1080" height="1330" alt="Screenshot 3 – Why This Matters (Expanded)" src="https://github.com/user-attachments/assets/f891b484-5627-4365-8b80-00bd36512f24" />
+
+-  Full Dashboard
+  <img width="1080" height="2400" alt="Home (Top)" src="https://github.com/user-attachments/assets/e020bc46-5728-490e-94b8-85391aee0ffa" />
+
+---
+
+## 🛠 Tech Stack
+
+- **Language:** Kotlin
+- **UI:** XML (Material Design)
+- **Storage:** SharedPreferences
+- **Navigation:** BottomNavigationView
+- **Web Content:** Android WebView
+
+---
+
+## 🎯 Goal of the App
+
+> Consistency beats motivation.  
+> Small daily effort builds massive long-term results.
+
+---
+
+## 👤 Developer
+
+**Dhruv Padhiyar**  
+B.Tech CSE (Data Science)  
+Building discipline through software.
+
+---
+
+## 📄 License
+This project is for educational and personal productivity use.
