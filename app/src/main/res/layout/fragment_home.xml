@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Day -->
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day 7 / 180"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Streak -->
+        <TextView
+            android:id="@+id/tvStreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔥 Streak: 3 days"
+            android:layout_marginTop="4dp" />
+
+        <!-- Progress -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <!-- Today's tasks -->
+        <TextView
+            android:id="@+id/tvTodayTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Tasks"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp" />
+
+        <LinearLayout
+            android:id="@+id/taskContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- Task 1 -->
+            <CheckBox
+                android:id="@+id/cbHomeTask1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task 1 title"
+                android:textSize="16sp" />
+
+            <!-- Task 2 -->
+            <CheckBox
+                android:id="@+id/cbHomeTask2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task 2 title"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+
+        <!-- Dynamic task list -->
+        <LinearLayout
+            android:id="@+id/taskContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp" />
+
+        <!-- Complete Day -->
+        <Button
+            android:id="@+id/btnCompleteDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark Day Complete"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvMotivation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

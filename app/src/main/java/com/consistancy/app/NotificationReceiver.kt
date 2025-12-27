@@ -12,7 +12,7 @@ class NotificationReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
 
-        val channelId = "CONSISTANCY_CHANNEL"
+        val channelId = "consistancy_daily"
 
         val manager =
             context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
@@ -27,11 +27,12 @@ class NotificationReceiver : BroadcastReceiver() {
         }
 
         val notification = NotificationCompat.Builder(context, channelId)
-            .setContentTitle("CONSISTANCY")
-            .setContentText("Today's tasks are waiting. Don't break the streak.")
-            .setSmallIcon(android.R.drawable.ic_popup_reminder)
+            .setSmallIcon(R.mipmap.ic_launcher)
+            .setContentTitle("Consistancy 💪")
+            .setContentText("Complete today’s tasks and keep your streak alive!")
+            .setAutoCancel(true)
             .build()
 
-        manager.notify(1, notification)
+        manager.notify(1001, notification)
     }
 }

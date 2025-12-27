@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.consistancy.app">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <application
         android:allowBackup="true"
@@ -12,6 +14,9 @@
 
         <!-- 🔥 LAUNCHER ACTIVITY -->
         <activity
+            android:name=".WebViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
@@ -20,22 +25,6 @@
             </intent-filter>
         </activity>
 
-        <!-- 🔒 INTERNAL PAGES -->
-        <activity
-            android:name=".TasksActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".ProgressActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".SettingsActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".WebViewActivity"
-            android:exported="false" />
 
         <!-- 🔔 NOTIFICATION RECEIVER -->
         <receiver

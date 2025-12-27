@@ -37,183 +37,154 @@ object DayTaskProvider {
 
             3 -> listOf(
                 DayTask(
-                    title = "Operators in Python",
-                    whatToDo = "Learn arithmetic, comparison, and logical operators.",
-                    whyThisMatters = "Operators are used in every real program.",
-                    resourceUrl = "https://www.w3schools.com/python/python_operators.asp"
+                    title = "Control Flow (if / else)",
+                    whatToDo = "Learn conditional statements and simple decision making.",
+                    whyThisMatters = "Every program depends on conditions and choices.",
+                    resourceUrl = "https://www.w3schools.com/python/python_conditions.asp"
                 ),
                 DayTask(
-                    title = "Practice Simple Expressions",
-                    whatToDo = "Try 10 small examples using operators.",
-                    whyThisMatters = "Practice converts theory into skill.",
-                    resourceUrl = "https://www.programiz.com/python-programming/operators"
+                    title = "Practice Logic",
+                    whatToDo = "Solve 5 simple if-else problems.",
+                    whyThisMatters = "Logic improves clarity and confidence.",
+                    resourceUrl = "https://www.hackerrank.com/domains/tutorials/10-days-of-python"
                 )
             )
 
             4 -> listOf(
                 DayTask(
-                    title = "Conditional Statements",
-                    whatToDo = "Learn if, else, elif with examples.",
-                    whyThisMatters = "Conditions make programs intelligent.",
-                    resourceUrl = "https://www.w3schools.com/python/python_conditions.asp"
+                    title = "Loops (for / while)",
+                    whatToDo = "Understand looping concepts with examples.",
+                    whyThisMatters = "Loops automate repetitive work.",
+                    resourceUrl = "https://www.w3schools.com/python/python_loops.asp"
                 ),
                 DayTask(
-                    title = "Decision Making Practice",
-                    whatToDo = "Write 5 decision-based programs.",
-                    whyThisMatters = "Logic building is critical for interviews.",
-                    resourceUrl = "https://www.geeksforgeeks.org/python-if-else/"
+                    title = "Loop Practice",
+                    whatToDo = "Print patterns and number sequences.",
+                    whyThisMatters = "Builds thinking speed.",
+                    resourceUrl = "https://www.geeksforgeeks.org/loops-in-python/"
                 )
             )
 
             5 -> listOf(
                 DayTask(
-                    title = "Loops – for loop",
-                    whatToDo = "Understand how for loops work.",
-                    whyThisMatters = "Loops save time and avoid repetition.",
-                    resourceUrl = "https://www.w3schools.com/python/python_for_loops.asp"
+                    title = "Functions Basics",
+                    whatToDo = "Learn how to define and call functions.",
+                    whyThisMatters = "Functions keep code clean and reusable.",
+                    resourceUrl = "https://www.w3schools.com/python/python_functions.asp"
                 ),
                 DayTask(
-                    title = "Loop Practice",
-                    whatToDo = "Print patterns and number sequences.",
-                    whyThisMatters = "Loops appear in almost every coding problem.",
-                    resourceUrl = "https://www.programiz.com/python-programming/for-loop"
+                    title = "Function Practice",
+                    whatToDo = "Write 3 small functions.",
+                    whyThisMatters = "Modular thinking is essential.",
+                    resourceUrl = "https://realpython.com/defining-your-own-python-function/"
                 )
             )
 
             6 -> listOf(
                 DayTask(
-                    title = "while Loop",
-                    whatToDo = "Learn while loop and loop conditions.",
-                    whyThisMatters = "Some problems need condition-based loops.",
-                    resourceUrl = "https://www.w3schools.com/python/python_while_loops.asp"
+                    title = "Lists in Python",
+                    whatToDo = "Learn list creation, indexing, and operations.",
+                    whyThisMatters = "Lists store and manage data efficiently.",
+                    resourceUrl = "https://www.w3schools.com/python/python_lists.asp"
                 ),
                 DayTask(
-                    title = "Loop Control",
-                    whatToDo = "Learn break and continue.",
-                    whyThisMatters = "Gives control over program flow.",
-                    resourceUrl = "https://www.geeksforgeeks.org/python-break-continue/"
+                    title = "List Problems",
+                    whatToDo = "Solve 5 list-based problems.",
+                    whyThisMatters = "Prepares for DSA.",
+                    resourceUrl = "https://leetcode.com/tag/array/"
                 )
             )
 
             7 -> listOf(
                 DayTask(
-                    title = "Lists in Python",
-                    whatToDo = "Learn list creation, indexing, slicing.",
-                    whyThisMatters = "Lists store real-world data collections.",
-                    resourceUrl = "https://www.w3schools.com/python/python_lists.asp"
+                    title = "Tuples & Sets",
+                    whatToDo = "Understand immutable and unique collections.",
+                    whyThisMatters = "Improves data handling.",
+                    resourceUrl = "https://www.w3schools.com/python/python_tuples.asp"
                 ),
                 DayTask(
-                    title = "List Practice",
-                    whatToDo = "Solve 10 list-based questions.",
-                    whyThisMatters = "Lists are used in DSA and projects.",
-                    resourceUrl = "https://www.programiz.com/python-programming/list"
+                    title = "Practice Collections",
+                    whatToDo = "Convert lists to sets and tuples.",
+                    whyThisMatters = "Strengthens Python basics.",
+                    resourceUrl = "https://www.geeksforgeeks.org/python-collections/"
                 )
             )
 
             8 -> listOf(
                 DayTask(
-                    title = "Tuples & Sets",
-                    whatToDo = "Understand difference between tuple and set.",
-                    whyThisMatters = "Choosing correct data structure matters.",
-                    resourceUrl = "https://www.w3schools.com/python/python_tuples.asp"
+                    title = "Dictionaries",
+                    whatToDo = "Learn key-value data structures.",
+                    whyThisMatters = "Used everywhere in real apps.",
+                    resourceUrl = "https://www.w3schools.com/python/python_dictionaries.asp"
                 ),
                 DayTask(
-                    title = "Set Operations",
-                    whatToDo = "Learn union, intersection.",
-                    whyThisMatters = "Useful in real data processing.",
-                    resourceUrl = "https://www.geeksforgeeks.org/python-sets/"
+                    title = "Dictionary Practice",
+                    whatToDo = "Create and access dictionary data.",
+                    whyThisMatters = "Essential for backend & AI.",
+                    resourceUrl = "https://realpython.com/python-dicts/"
                 )
             )
 
             9 -> listOf(
                 DayTask(
-                    title = "Dictionaries",
-                    whatToDo = "Learn key-value pairs.",
-                    whyThisMatters = "Dictionaries model real-world data.",
-                    resourceUrl = "https://www.w3schools.com/python/python_dictionaries.asp"
+                    title = "Intro to DSA",
+                    whatToDo = "Understand what Data Structures are.",
+                    whyThisMatters = "DSA improves problem-solving.",
+                    resourceUrl = "https://www.geeksforgeeks.org/data-structures/"
                 ),
                 DayTask(
-                    title = "Dictionary Practice",
-                    whatToDo = "Build small dictionary-based programs.",
-                    whyThisMatters = "Used heavily in APIs & backend.",
-                    resourceUrl = "https://www.programiz.com/python-programming/dictionary"
+                    title = "Time Complexity",
+                    whatToDo = "Learn Big-O basics.",
+                    whyThisMatters = "Efficiency matters in interviews.",
+                    resourceUrl = "https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/"
                 )
             )
 
             10 -> listOf(
-                DayTask(
-                    title = "Functions in Python",
-                    whatToDo = "Learn how to define and call functions.",
-                    whyThisMatters = "Functions make code reusable.",
-                    resourceUrl = "https://www.w3schools.com/python/python_functions.asp"
-                ),
-                DayTask(
-                    title = "Function Practice",
-                    whatToDo = "Write functions for simple problems.",
-                    whyThisMatters = "Functions are interview essentials.",
-                    resourceUrl = "https://www.geeksforgeeks.org/python-functions/"
-                )
-            )
-
-            in 11..15 -> listOf(
-                DayTask(
-                    title = "Time & Space Complexity",
-                    whatToDo = "Understand Big-O basics.",
-                    whyThisMatters = "Efficiency matters in interviews.",
-                    resourceUrl = "https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/"
-                ),
-                DayTask(
-                    title = "Simple Complexity Examples",
-                    whatToDo = "Analyze 5 code snippets.",
-                    whyThisMatters = "Sharpens problem-solving thinking.",
-                    resourceUrl = "https://www.programiz.com/dsa/asymptotic-notations"
-                )
-            )
-
-            in 16..20 -> listOf(
-                DayTask(
+      /*This is box 1's content */          DayTask(
                     title = "Arrays Basics",
-                    whatToDo = "Understand arrays and indexing.",
-                    whyThisMatters = "Arrays are base of all DSA.",
-                    resourceUrl = "https://www.geeksforgeeks.org/array-data-structure/"
+                    whatToDo = "Learn array traversal and operations.",
+                    whyThisMatters = "Arrays are core DSA structure.",
+                    resourceUrl = "https://leetcode.com/explore/learn/card/array-and-string/"
                 ),
-                DayTask(
+                /*This is box 2's content */                DayTask(
                     title = "Array Practice",
-                    whatToDo = "Solve 5 array problems.",
-                    whyThisMatters = "Improves logic speed.",
-                    resourceUrl = "https://leetcode.com/tag/array/"
+                    whatToDo = "Solve 3 easy array problems.",
+                    whyThisMatters = "Builds confidence for interviews.",
+                    resourceUrl = "https://leetcode.com/problemset/all/?difficulty=EASY"
                 )
             )
 
-            in 21..25 -> listOf(
+            in 11..20 -> listOf(
+                /*This is box 1's content */   DayTask(
+                  /*Title*/  title = "DSA Practice",
+                    /*what to do*/ whatToDo = "Solve 2–3 problems (arrays / strings).",
+                    /*why matter*/whyThisMatters = "Daily practice builds mastery.",
+                    /*resourse*/resourceUrl = "https://leetcode.com/tag/string/"
+                ),
+                /*This is box 2's content */  DayTask(
+                    title = "Python Revision",
+                    whatToDo = "Revise functions, lists, dicts.",
+                    whyThisMatters = "Strong basics = fast growth.",
+                    resourceUrl = "https://www.w3schools.com/python/"
+                )
+            )
+
+            in 21..30 -> listOf(
                 DayTask(
-                    title = "Searching Algorithms",
-                    whatToDo = "Learn linear & binary search.",
-                    whyThisMatters = "Searching is a core algorithm.",
+                    title = "Advanced DSA Basics",
+                    whatToDo = "Learn searching & sorting.",
+                    whyThisMatters = "Interview essential topics.",
                     resourceUrl = "https://www.geeksforgeeks.org/searching-algorithms/"
                 ),
                 DayTask(
-                    title = "Binary Search Practice",
-                    whatToDo = "Solve 3 binary search problems.",
-                    whyThisMatters = "Very common in interviews.",
-                    resourceUrl = "https://leetcode.com/tag/binary-search/"
+                    title = "Problem Solving",
+                    whatToDo = "Solve 3 problems daily.",
+                    whyThisMatters = "Consistency > speed.",
+                    resourceUrl = "https://leetcode.com/problemset/all/"
                 )
             )
 
-            in 26..30 -> listOf(
-                DayTask(
-                    title = "Sorting Algorithms",
-                    whatToDo = "Learn bubble, selection, insertion sort.",
-                    whyThisMatters = "Sorting is used everywhere.",
-                    resourceUrl = "https://www.geeksforgeeks.org/sorting-algorithms/"
-                ),
-                DayTask(
-                    title = "Sorting Practice",
-                    whatToDo = "Manually dry-run sorting algorithms.",
-                    whyThisMatters = "Builds deep understanding.",
-                    resourceUrl = "https://visualgo.net/en/sorting"
-                )
-            )
 
             in 31..35 -> listOf(
                 DayTask(
@@ -395,6 +366,275 @@ object DayTaskProvider {
                 )
             )
 
+            in 91..95 -> listOf(
+                DayTask(
+                    "Advanced Regression Models",
+                    "Learn Ridge and Lasso regression.",
+                    "Used to prevent overfitting in real models.",
+                    "https://www.geeksforgeeks.org/regularization-in-machine-learning/"
+                ),
+                DayTask(
+                    "Regression Comparison",
+                    "Compare Linear vs Ridge vs Lasso.",
+                    "Helps choose correct model.",
+                    "https://towardsdatascience.com/ridge-lasso-regression-49a3b64f4c65"
+                )
+            )
+
+            in 96..100 -> listOf(
+                DayTask(
+                    "Decision Trees",
+                    "Understand how decision trees work.",
+                    "Foundation for Random Forest.",
+                    "https://www.geeksforgeeks.org/decision-tree/"
+                ),
+                DayTask(
+                    "Tree Visualization",
+                    "Visualize a decision tree.",
+                    "Visualization builds intuition.",
+                    "https://scikit-learn.org/stable/modules/tree.html"
+                )
+            )
+
+            in 101..105 -> listOf(
+                DayTask(
+                    "Ensemble Learning",
+                    "Learn Random Forest & Boosting.",
+                    "Industry uses ensembles heavily.",
+                    "https://www.geeksforgeeks.org/ensemble-methods-in-machine-learning/"
+                ),
+                DayTask(
+                    "Model Comparison",
+                    "Compare single vs ensemble models.",
+                    "Improves accuracy decisions.",
+                    "https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/"
+                )
+            )
+
+            in 106..110 -> listOf(
+                DayTask(
+                    "Neural Network Basics",
+                    "Understand neurons, weights, bias.",
+                    "Core deep learning foundation.",
+                    "https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/"
+                ),
+                DayTask(
+                    "Activation Functions",
+                    "Learn ReLU, Sigmoid, Softmax.",
+                    "Controls learning behavior.",
+                    "https://www.geeksforgeeks.org/activation-functions/"
+                )
+            )
+
+            in 111..115 -> listOf(
+                DayTask(
+                    "Intro to TensorFlow / Keras",
+                    "Understand deep learning frameworks.",
+                    "Industry standard tools.",
+                    "https://www.tensorflow.org/tutorials"
+                ),
+                DayTask(
+                    "Build First Neural Network",
+                    "Train a simple NN model.",
+                    "Hands-on deep learning.",
+                    "https://www.tensorflow.org/tutorials/keras/classification"
+                )
+            )
+
+            in 116..120 -> listOf(
+                DayTask(
+                    "Overfitting in DL",
+                    "Learn dropout & regularization.",
+                    "Improves deep model accuracy.",
+                    "https://www.geeksforgeeks.org/dropout-in-neural-networks/"
+                ),
+                DayTask(
+                    "Model Tuning",
+                    "Tune learning rate and epochs.",
+                    "Optimizes training.",
+                    "https://keras.io/api/optimizers/"
+                )
+            )
+
+            in 121..125 -> listOf(
+                DayTask(
+                    "NLP Basics",
+                    "Learn tokenization & text cleaning.",
+                    "Text data dominates AI.",
+                    "https://www.geeksforgeeks.org/nlp-basics/"
+                ),
+                DayTask(
+                    "Text Processing Practice",
+                    "Clean and preprocess text data.",
+                    "Essential NLP skill.",
+                    "https://www.kaggle.com/learn/natural-language-processing"
+                )
+            )
+
+            in 126..130 -> listOf(
+                DayTask(
+                    "Computer Vision Basics",
+                    "Understand images as matrices.",
+                    "Foundation for CV models.",
+                    "https://www.geeksforgeeks.org/introduction-to-computer-vision/"
+                ),
+                DayTask(
+                    "Image Processing",
+                    "Load and manipulate images.",
+                    "Used in all vision tasks.",
+                    "https://docs.opencv.org/"
+                )
+            )
+
+            in 131..135 -> listOf(
+                DayTask(
+                    "CNN Concept",
+                    "Understand convolutional layers.",
+                    "Core of image recognition.",
+                    "https://www.geeksforgeeks.org/introduction-convolution-neural-network/"
+                ),
+                DayTask(
+                    "CNN Practice",
+                    "Train a simple CNN model.",
+                    "Hands-on CV experience.",
+                    "https://www.tensorflow.org/tutorials/images/cnn"
+                )
+            )
+
+            in 136..140 -> listOf(
+                DayTask(
+                    "What is MLOps?",
+                    "Understand ML lifecycle & deployment.",
+                    "ML is useless without deployment.",
+                    "https://www.geeksforgeeks.org/mlops/"
+                ),
+                DayTask(
+                    "Model Versioning",
+                    "Understand model tracking.",
+                    "Used in production ML.",
+                    "https://mlflow.org/"
+                )
+            )
+
+            in 141..145 -> listOf(
+                DayTask(
+                    "API Basics",
+                    "Learn how APIs work.",
+                    "ML models are served via APIs.",
+                    "https://www.geeksforgeeks.org/rest-api-introduction/"
+                ),
+                DayTask(
+                    "Deploy ML Model",
+                    "Deploy model using Flask/FastAPI.",
+                    "Real-world ML skill.",
+                    "https://fastapi.tiangolo.com/tutorial/"
+                )
+            )
+
+            in 146..150 -> listOf(
+                DayTask(
+                    "Cloud Basics",
+                    "Understand cloud deployment.",
+                    "Most ML runs on cloud.",
+                    "https://aws.amazon.com/what-is-cloud-computing/"
+                ),
+                DayTask(
+                    "Model Monitoring",
+                    "Understand model drift.",
+                    "Keeps ML systems reliable.",
+                    "https://neptune.ai/blog/model-monitoring"
+                )
+            )
+
+            in 151..155 -> listOf(
+                DayTask(
+                    "Major ML Project",
+                    "Choose a real-world ML problem.",
+                    "Projects matter more than certificates.",
+                    "https://www.kaggle.com/"
+                ),
+                DayTask(
+                    "Data Collection",
+                    "Gather and clean data.",
+                    "Most time spent here.",
+                    "https://www.dataquest.io/blog/data-cleaning/"
+                )
+            )
+
+            in 156..160 -> listOf(
+                DayTask(
+                    "Model Building",
+                    "Train and optimize model.",
+                    "Core development phase.",
+                    "https://scikit-learn.org/stable/"
+                ),
+                DayTask(
+                    "Model Evaluation",
+                    "Test model thoroughly.",
+                    "Avoid false confidence.",
+                    "https://www.geeksforgeeks.org/confusion-matrix-machine-learning/"
+                )
+            )
+
+            in 161..165 -> listOf(
+                DayTask(
+                    "Project Documentation",
+                    "Write clear README.",
+                    "Recruiters read this.",
+                    "https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/"
+                ),
+                DayTask(
+                    "GitHub Publishing",
+                    "Push project to GitHub.",
+                    "Portfolio proof.",
+                    "https://docs.github.com/en/get-started"
+                )
+            )
+
+            in 166..170 -> listOf(
+                DayTask(
+                    "AI Interview Questions",
+                    "Study common ML interview topics.",
+                    "Prepares for job interviews.",
+                    "https://www.interviewbit.com/machine-learning-interview-questions/"
+                ),
+                DayTask(
+                    "Explain Projects",
+                    "Practice explaining your project.",
+                    "Communication matters.",
+                    "https://www.youtube.com/watch?v=Z6fSHr5GvK0"
+                )
+            )
+
+            in 171..175 -> listOf(
+                DayTask(
+                    "Resume Building",
+                    "Create AI-focused resume.",
+                    "Resume gets interviews.",
+                    "https://www.overleaf.com/latex/templates"
+                ),
+                DayTask(
+                    "LinkedIn Optimization",
+                    "Optimize LinkedIn profile.",
+                    "Recruiters search here.",
+                    "https://www.linkedin.com/help/linkedin"
+                )
+            )
+
+            in 176..180 -> listOf(
+                DayTask(
+                    "Mock Interviews",
+                    "Practice interview questions.",
+                    "Reduces interview fear.",
+                    "https://www.pramp.com/"
+                ),
+                DayTask(
+                    "Career Roadmap Review",
+                    "Review full 180-day journey.",
+                    "Confidence comes from reflection.",
+                    "https://roadmap.sh/ai-data-scientist"
+                )
+            )
 
 
             else -> listOf(

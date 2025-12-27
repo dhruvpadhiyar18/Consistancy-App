@@ -1,5 +1,13 @@
 <resources>
-    <color name="textPrimary">#FFFFFF</color>
-    <color name="textSecondary">#CCCCCC</color>
-    <color name="cardBackground">#1E1E1E</color>
+    <!-- Backgrounds -->
+    <color name="bg_main">#FFFFFF</color>
+    <color name="card_bg">#F2F2F7</color>
+
+    <!-- Text -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#6E6E73</color>
+
+    <!-- Buttons -->
+    <color name="button_bg">#E0E0E0</color>
+    <color name="button_text">#000000</color>
 </resources>
