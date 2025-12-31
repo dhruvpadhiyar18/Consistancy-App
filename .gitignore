@@ -1,3 +1,4 @@
+# Android Studio / IntelliJ
 *.iml
 .gradle
 /local.properties
@@ -7,9 +8,26 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+/.idea/deploymentTargetSelector.xml
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
+
+# Gradle
+.gradle/
+build/
+
+# Signing files (VERY IMPORTANT - KEEP SECRET)
+*.jks
+*.keystore
+*.p12
+google-services.json
+
+# Local config
 local.properties
+
+# OS specific
+Thumbs.db
+.DS_Store

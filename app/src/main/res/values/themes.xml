@@ -20,6 +20,12 @@
         <item name="textAppearanceBodyLarge">@style/TextAppearance.Pro.BodyLarge</item>
     </style>
 
+    <!-- Specific theme for WebView to prevent MaterialToolbar crashes -->
+    <style name="Theme.Consistancy.WebView" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/primary</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_app_logo_splash</item>

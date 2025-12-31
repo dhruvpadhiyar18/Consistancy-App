@@ -1,12 +1,6 @@
 <resources>
-    <string name="app_name">Consistancy</string>
-    <string name="your_progress">Your Progress</string>
-    <string name="day_progress_placeholder">Day 1 / 180</string>
-    <string name="streak_progress_placeholder">🔥 Streak: 0 days</string>
-    <string name="percent_completed_placeholder">0%% completed</string>
-    <string name="milestones">Milestones</string>
-    <string name="milestone_7">🔒 Day 7 – Foundation Discipline</string>
-    <string name="milestone_30">🔒 Day 30 – Core Python + DSA</string>
-    <string name="milestone_90">🔒 Day 90 – AI/ML Track Started</string>
-    <string name="milestone_180">🔒 Day 180 – Career Ready</string>
+    <string name="app_name">CONSISTANCY</string>
+    <string name="app_tagline">180 Days to AI &amp; Discipline</string>
+    <string name="roadmap_title">The 180-Day Mastery Roadmap</string>
+    <string name="roadmap_desc">From absolute beginner to career-ready AI Engineer. Master logic, data, and machine learning through daily consistent action.</string>
 </resources>
