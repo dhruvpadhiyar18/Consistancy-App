@@ -1,95 +1,80 @@
-# 📆 Consistancy – 180 Day AI & Career Builder App
+# 💎 CONSISTANCY – 180 Day AI & Discipline Mastery
 
-Consistancy is a focused productivity Android app designed to help learners stay consistent for **180 days** while building strong foundations in **Python, DSA, AI/ML, and career preparation**.
+**CONSISTANCY** is a premium Android application designed to forge unbreakable discipline. It guides users through a meticulously structured **180-day journey**, transitioning from a coding beginner to a career-ready **AI Engineer**.
 
-No distractions. No overload. Just daily progress.
-
----
-
-## 🚀 Features
-
-### ✅ Daily Task System
-- 2 structured tasks per day
-- Calm, beginner-friendly progression
-- Tasks unlock only after completing previous days
-
-### 💡 “Why This Matters”
-- Every task explains *why* it’s important
-- Builds clarity, not just completion
-
-### 🔥 Streak & Progress Tracking
-- Daily streak counter
-- Progress bar across 180 days
-- Weekly consistency tracking
-
-### 🏆 Milestones
-- Day 7 – Discipline Built
-- Day 30 – Python + DSA Foundation
-- Day 90 – AI/ML Track Started
-- Day 180 – Career Ready
-
-### 🌙 Dark Mode First
-- Clean dark UI
-- Eye-friendly for long-term usage
-
-### 🌐 Learning Resources
-- One-click access to curated learning links
-- In-app WebView (no browser switching)
-
----
-
-## 🧠 Learning Roadmap
-
-| Phase | Days | Focus |
-|-----|-----|------|
-| Foundation | 1–10 | Python basics & logic |
-| Core Skills | 11–30 | DSA + problem solving |
-| AI/ML Track | 31–90 | NumPy, Pandas, ML |
-| Advanced AI | 91–140 | DL, NLP, CV |
-| Career Phase | 141–180 | Projects, resume, interviews |
+Built with a high-end **Glassmorphism UI**, the app focuses on the philosophy that small daily efforts compound into massive long-term success.
 
 ---
 
 ## 📱 Screenshots
 
-- Home Screen
-  <img width="1080" height="602" alt="Screenshot 1 – Home (Top)" src="https://github.com/user-attachments/assets/95ecb075-dd14-461a-9784-7c204cf02741" />
+<p align="center">
+  <img src="https://github.com/dhruvpadhiyar18/Consistancy-App/raw/master/screenshots/home.png" width="30%" alt="Home Screen" />
+  <img src="https://github.com/dhruvpadhiyar18/Consistancy-App/raw/master/screenshots/tasks.png" width="30%" alt="Tasks Screen" />
+  <img src="https://github.com/dhruvpadhiyar18/Consistancy-App/raw/master/screenshots/progress.png" width="30%" alt="Progress Screen" />
+</p>
 
-- Task Cards
-  <img width="1080" height="1141" alt="Screenshot 2 – Task Cards" src="https://github.com/user-attachments/assets/19f5e479-e8b2-4e25-8b95-1dfec8ae0f9a" />
+---
 
-- Why This Matters
-  <img width="1080" height="1330" alt="Screenshot 3 – Why This Matters (Expanded)" src="https://github.com/user-attachments/assets/f891b484-5627-4365-8b80-00bd36512f24" />
+## 🚀 Key Features
 
--  Full Dashboard
-  <img width="1080" height="2400" alt="Home (Top)" src="https://github.com/user-attachments/assets/e020bc46-5728-490e-94b8-85391aee0ffa" />
+### ✅ Dual-Task Mission System
+Focus on just **two high-impact tasks** every day. No overwhelm, just steady progress.
+
+### 🗺️ AI Mastery Roadmap
+A built-in 4-phase professional curriculum:
+*   **Phase 1: Foundation** (Python, Logic, Data Handling)
+*   **Phase 2: Machine Learning** (NumPy, Pandas, Core Models)
+*   **Phase 3: Deep Learning** (Neural Networks, CV, NLP)
+*   **Phase 4: Career Ready** (MLOps, Projects, Interview Prep)
+
+### 🔥 Streak & Gamification
+*   **Dynamic Streaks:** Track your consecutive days of discipline.
+*   **Trophy Room:** Unlock visual rewards at Day 7, 30, 90, and 180 milestones.
+*   **Celebrations:** Integrated Konfetti system to reward daily completions.
+
+### ✍️ Daily Reflections
+A built-in journaling tool to record lessons learned and personal growth every day.
+
+### 📜 Journey Log
+Browse through your past activities. Re-read your past reflections and view task history from any unlocked day.
+
+### 🌙 Adaptive UI
+Fully optimized for both **Light and Dark modes**, featuring a modern Glassmorphism design with midnight gradients.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Language:** Kotlin
-- **UI:** XML (Material Design)
-- **Storage:** SharedPreferences
-- **Navigation:** BottomNavigationView
-- **Web Content:** Android WebView
+*   **Language:** Kotlin
+*   **UI Framework:** XML (Material 3) with Glassmorphism
+*   **Storage:** SharedPreferences
+*   **Notifications:** AlarmManager + BroadcastReceiver
+*   **Animations:** Konfetti-XML
+*   **Splash:** Android 12+ SplashScreen API
 
 ---
 
-## 🎯 Goal of the App
+## 🎯 Our Philosophy
 
-> Consistency beats motivation.  
-> Small daily effort builds massive long-term results.
+> *"Consistency is what transforms average into excellence."*
+
+We believe that becoming a world-class engineer isn't about 12-hour study sessions; it's about showing up every single day for 180 days.
 
 ---
 
 ## 👤 Developer
 
 **Dhruv Padhiyar**  
-B.Tech CSE (Data Science)  
-Building discipline through software.
+*Building the next generation of AI-driven tools.*  
+📩 [dhruvgtech@gmail.com](mailto:dhruvgtech@gmail.com)  
+🔗 [GitHub Profile](https://github.com/dhruvpadhiyar18)
 
 ---
 
-## 📄 License
-This project is for educational and personal productivity use.
+## 📄 Legal
+*   [Privacy Policy](https://dhruvpadhiyar18.github.io/Consistancy-App/privacy-policy.html)
+*   [Terms & Conditions](https://dhruvpadhiyar18.github.io/Consistancy-App/terms-and-conditions.html)
+
+---
+*Built with ❤️ in India.*
