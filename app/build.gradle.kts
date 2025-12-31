@@ -5,9 +5,7 @@ plugins {
 
 android {
     namespace = "com.consistancy.app"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.consistancy.app"
@@ -43,6 +41,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("nl.dionsegijn:konfetti-xml:2.0.4")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

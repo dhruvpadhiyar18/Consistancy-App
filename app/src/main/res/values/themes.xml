@@ -1,12 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- App Theme -->
     <style name="Theme.Consistancy" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- You can customize colors later -->
-        <!-- Example:
-        <item name="colorPrimary">@color/purple_500</item>
-        -->
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorPrimaryContainer">@color/gradient_start</item>
+        <item name="colorOnPrimaryContainer">@color/primary</item>
+
+        <!-- Surfaces -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@drawable/bg_main_gradient</item>
+        <item name="android:navigationBarColor">@color/gradient_end</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Pro.HeadlineLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Pro.TitleMedium</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Pro.BodyLarge</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_app_logo_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.Consistancy</item>
+    </style>
+
+    <!-- Professional Glass Card -->
+    <style name="Widget.Consistancy.GlassCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">32dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Consistancy.CardView" parent="Widget.Consistancy.GlassCard" />
+
+    <!-- Typography Pro System -->
+    <style name="TextAppearance.Pro.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <style name="TextAppearance.Pro.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Pro.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/text_body</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight">24sp</item>
     </style>
 
 </resources>

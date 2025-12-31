@@ -14,9 +14,9 @@ object DayTaskProvider {
                 ),
                 DayTask(
                     title = "Problem Solving Basics",
-                    whatToDo = "Learn how to break problems into steps before coding.",
-                    whyThisMatters = "Thinking clearly matters more than syntax.",
-                    resourceUrl = "https://www.geeksforgeeks.org/how-to-solve-algorithms/"
+                    whatToDo = "Learn how to think step-by-step before coding.",
+                    whyThisMatters = "Good thinking matters more than syntax.",
+                    resourceUrl = "https://www.youtube.com/watch?v=RkzTN4Yy5Js"
                 )
             )
 

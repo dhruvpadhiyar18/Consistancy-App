@@ -1,6 +1,5 @@
 package com.consistancy.app
 
-import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -15,102 +14,87 @@ class TasksFragment : Fragment(R.layout.fragment_tasks) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        prefs =
-            requireContext().getSharedPreferences("CONSISTANCY", Context.MODE_PRIVATE)
+        prefs = requireContext().getSharedPreferences(
+            "CONSISTANCY",
+            Context.MODE_PRIVATE
+        )
 
-        loadTasks(view)
-
-        // 🔄 Listen for reset
-        parentFragmentManager.setFragmentResultListener(
-            "RESET_DONE",
-            viewLifecycleOwner
-        ) { _, _ ->
-            loadTasks(view)
-        }
+        loadTasksUI(view)
     }
 
+    override fun onResume() {
+        super.onResume()
+        // 🔄 IMPORTANT: refresh when coming back from Home
+        view?.let { loadTasksUI(it) }
+    }
 
-    private fun loadTasks(view: View) {
+    private fun loadTasksUI(view: View) {
 
         val currentDay = prefs.getInt("DAY", 1)
         val tasks = DayTaskProvider.getTasksForDay(currentDay)
 
-        val t1 = tasks[0]
-        val t2 = tasks[1]
-
         // ---------- TASK 1 ----------
-        view.findViewById<TextView>(R.id.tvTaskTitle1).text = t1.title
-        view.findViewById<TextView>(R.id.tvTaskDesc1).text = t1.whatToDo
-
+        val tvTitle1 = view.findViewById<TextView>(R.id.tvTaskTitle1)
+        val tvDesc1 = view.findViewById<TextView>(R.id.tvTaskDesc1)
         val cb1 = view.findViewById<CheckBox>(R.id.cbTask1)
-        cb1.isChecked = prefs.getBoolean("TASK_${currentDay}_1", false)
+        val btnWhy1 = view.findViewById<Button>(R.id.btnWhy1)
+        val btnRes1 = view.findViewById<Button>(R.id.btnResource1)
+
+        tvTitle1.text = tasks[0].title
+        tvDesc1.text = tasks[0].whatToDo
+
+        cb1.isChecked =
+            TaskPrefs.isTaskDone(requireContext(), currentDay, 1)
 
         cb1.setOnCheckedChangeListener { _, checked ->
-            prefs.edit().putBoolean("TASK_${currentDay}_1", checked).apply()
+            TaskPrefs.setTaskDone(requireContext(), currentDay, 1, checked)
         }
 
-        view.findViewById<Button>(R.id.btnWhy1).setOnClickListener {
-            showWhyDialog(t1.title, t1.whyThisMatters)
+        btnWhy1.setOnClickListener {
+            showWhy(tasks[0].whyThisMatters)
         }
 
-        view.findViewById<Button>(R.id.btnResource1).setOnClickListener {
-            openWeb(t1.resourceUrl)
+        btnRes1.setOnClickListener {
+            openResource(tasks[0].resourceUrl)
         }
 
         // ---------- TASK 2 ----------
-        view.findViewById<TextView>(R.id.tvTaskTitle2).text = t2.title
-        view.findViewById<TextView>(R.id.tvTaskDesc2).text = t2.whatToDo
-
+        val tvTitle2 = view.findViewById<TextView>(R.id.tvTaskTitle2)
+        val tvDesc2 = view.findViewById<TextView>(R.id.tvTaskDesc2)
         val cb2 = view.findViewById<CheckBox>(R.id.cbTask2)
-        cb2.isChecked = prefs.getBoolean("TASK_${currentDay}_2", false)
+        val btnWhy2 = view.findViewById<Button>(R.id.btnWhy2)
+        val btnRes2 = view.findViewById<Button>(R.id.btnResource2)
+
+        tvTitle2.text = tasks[1].title
+        tvDesc2.text = tasks[1].whatToDo
+
+        cb2.isChecked =
+            TaskPrefs.isTaskDone(requireContext(), currentDay, 2)
 
         cb2.setOnCheckedChangeListener { _, checked ->
-            prefs.edit().putBoolean("TASK_${currentDay}_2", checked).apply()
+            TaskPrefs.setTaskDone(requireContext(), currentDay, 2, checked)
         }
 
-        view.findViewById<Button>(R.id.btnWhy2).setOnClickListener {
-            showWhyDialog(t2.title, t2.whyThisMatters)
+        btnWhy2.setOnClickListener {
+            showWhy(tasks[1].whyThisMatters)
         }
 
-        view.findViewById<Button>(R.id.btnResource2).setOnClickListener {
-            openWeb(t2.resourceUrl)
+        btnRes2.setOnClickListener {
+            openResource(tasks[1].resourceUrl)
         }
     }
 
-    // ✅ WHY THIS MATTERS DIALOG
-    private fun showWhyDialog(title: String, message: String) {
-        AlertDialog.Builder(requireContext())
-            .setTitle("💡 Why this matters")
-            .setMessage(message)
-            .setPositiveButton("Got it") { dialog, _ ->
-                dialog.dismiss()
-            }
+    private fun showWhy(text: String) {
+        android.app.AlertDialog.Builder(requireContext())
+            .setTitle("Why this matters")
+            .setMessage(text)
+            .setPositiveButton("Got it", null)
             .show()
     }
 
-    private fun openWeb(url: String) {
+    private fun openResource(url: String) {
         val intent = Intent(requireContext(), WebViewActivity::class.java)
         intent.putExtra("URL", url)
         startActivity(intent)
     }
-
-    private fun haptic(view: View) {
-        view.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP)
-    }
-
-    private fun animateCheck(view: View) {
-        view.animate()
-            .scaleX(1.15f)
-            .scaleY(1.15f)
-            .setDuration(120)
-            .withEndAction {
-                view.animate()
-                    .scaleX(1f)
-                    .scaleY(1f)
-                    .setDuration(120)
-                    .start()
-            }
-            .start()
-    }
-
 }

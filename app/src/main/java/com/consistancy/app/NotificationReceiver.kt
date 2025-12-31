@@ -1,23 +1,28 @@
 package com.consistancy.app
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.content.BroadcastReceiver
-import android.content.Context
-import android.content.Intent
-import android.os.Build
+import android.app.*
+import android.content.*
 import androidx.core.app.NotificationCompat
 
 class NotificationReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
 
-        val channelId = "consistancy_daily"
+        val prefs = context.getSharedPreferences("CONSISTANCY", Context.MODE_PRIVATE)
+        val day = prefs.getInt("DAY", 1)
+
+        val task1Done = prefs.getBoolean("TASK_${day}_1", false)
+        val task2Done = prefs.getBoolean("TASK_${day}_2", false)
+
+        // ❌ If both tasks completed → do nothing
+        if (task1Done && task2Done) return
+
+        val channelId = "daily_reminder"
 
         val manager =
             context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (android.os.Build.VERSION.SDK_INT >= 26) {
             val channel = NotificationChannel(
                 channelId,
                 "Daily Reminder",
@@ -27,9 +32,9 @@ class NotificationReceiver : BroadcastReceiver() {
         }
 
         val notification = NotificationCompat.Builder(context, channelId)
-            .setSmallIcon(R.mipmap.ic_launcher)
-            .setContentTitle("Consistancy 💪")
-            .setContentText("Complete today’s tasks and keep your streak alive!")
+            .setSmallIcon(android.R.drawable.ic_popup_reminder)
+            .setContentTitle("Consistency Reminder 🔥")
+            .setContentText("Complete today’s tasks to keep your streak!")
             .setAutoCancel(true)
             .build()
 

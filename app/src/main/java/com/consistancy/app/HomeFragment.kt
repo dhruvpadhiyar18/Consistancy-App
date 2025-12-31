@@ -5,20 +5,39 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.fragment.app.Fragment
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.card.MaterialCardView
+import nl.dionsegijn.konfetti.core.Party
+import nl.dionsegijn.konfetti.core.Position
+import nl.dionsegijn.konfetti.core.emitter.Emitter
+import nl.dionsegijn.konfetti.xml.KonfettiView
+import java.util.concurrent.TimeUnit
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private lateinit var prefs: android.content.SharedPreferences
 
+    private val quotes = listOf(
+        "Consistency is what transforms average into excellence.",
+        "Success is the sum of small efforts, repeated day in and day out.",
+        "Discipline is doing what needs to be done, even if you don't want to do it.",
+        "It's not what we do once in a while that shapes our lives. It's what we do consistently.",
+        "Motivation gets you going, but discipline keeps you growing.",
+        "Small daily improvements over time lead to stunning results.",
+        "The secret of your future is hidden in your daily routine."
+    )
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        prefs =
-            requireContext().getSharedPreferences("CONSISTANCY", Context.MODE_PRIVATE)
+        prefs = requireContext().getSharedPreferences(
+            "CONSISTANCY",
+            Context.MODE_PRIVATE
+        )
 
         loadHomeUI(view)
 
-        // 🔄 Listen for reset
+        // 🔄 Listen for reset from Settings
         parentFragmentManager.setFragmentResultListener(
             "RESET_DONE",
             viewLifecycleOwner
@@ -28,45 +47,62 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private fun loadHomeUI(view: View) {
-
         val tvDay = view.findViewById<TextView>(R.id.tvDay)
         val tvStreak = view.findViewById<TextView>(R.id.tvStreak)
         val progressBar = view.findViewById<ProgressBar>(R.id.progressBar)
         val cbTask1 = view.findViewById<CheckBox>(R.id.cbHomeTask1)
         val cbTask2 = view.findViewById<CheckBox>(R.id.cbHomeTask2)
-        val btnComplete = view.findViewById<Button>(R.id.btnCompleteDay)
+        val tvTask1Title = view.findViewById<TextView>(R.id.tvTask1Title)
+        val tvTask2Title = view.findViewById<TextView>(R.id.tvTask2Title)
+        val btnComplete = view.findViewById<MaterialButton>(R.id.btnCompleteDay)
+        val konfettiView = view.findViewById<KonfettiView>(R.id.konfettiView)
+        val tvQuote = view.findViewById<TextView>(R.id.tvQuoteText)
+        val cardReflection = view.findViewById<MaterialCardView>(R.id.cardReflection)
+        val etReflection = view.findViewById<EditText>(R.id.etReflection)
 
         val currentDay = prefs.getInt("DAY", 1)
         val streak = prefs.getInt("STREAK", 0)
 
+        // Set Daily Quote
+        tvQuote.text = "\"${quotes[currentDay % quotes.size]}\""
+
         tvDay.text = "Day $currentDay / 180"
-        tvStreak.text = "🔥 Streak: $streak"
+        tvStreak.text = "🔥 $streak Day Streak"
         progressBar.progress = currentDay
 
         val tasks = DayTaskProvider.getTasksForDay(currentDay)
 
-        cbTask1.text = tasks[0].title
-        cbTask2.text = tasks[1].title
+        if (tasks.size >= 2) {
+            tvTask1Title.text = tasks[0].title
+            tvTask2Title.text = tasks[1].title
+        }
+
+        cbTask1.setOnCheckedChangeListener(null)
+        cbTask2.setOnCheckedChangeListener(null)
 
         cbTask1.isChecked = prefs.getBoolean("TASK_${currentDay}_1", false)
         cbTask2.isChecked = prefs.getBoolean("TASK_${currentDay}_2", false)
 
-        cbTask1.setOnCheckedChangeListener { _, checked ->
+        // Show reflection if tasks are done
+        updateReflectionVisibility(cardReflection, cbTask1.isChecked && cbTask2.isChecked)
+        etReflection.setText(prefs.getString("REFLECTION_$currentDay", ""))
+
+        cbTask1.setOnCheckedChangeListener { v, checked ->
             prefs.edit().putBoolean("TASK_${currentDay}_1", checked).apply()
+            HapticUtil.light(v)
+            updateReflectionVisibility(cardReflection, cbTask1.isChecked && cbTask2.isChecked)
         }
 
-        cbTask2.setOnCheckedChangeListener { _, checked ->
+        cbTask2.setOnCheckedChangeListener { v, checked ->
             prefs.edit().putBoolean("TASK_${currentDay}_2", checked).apply()
+            HapticUtil.light(v)
+            updateReflectionVisibility(cardReflection, cbTask1.isChecked && cbTask2.isChecked)
         }
 
         btnComplete.setOnClickListener {
-
             if (!cbTask1.isChecked || !cbTask2.isChecked) {
-                Toast.makeText(
-                    requireContext(),
-                    "Please complete both tasks first",
-                    Toast.LENGTH_SHORT
-                ).show()
+                HapticUtil.warning(it)
+                Toast.makeText(requireContext(), "Complete both tasks first", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -74,13 +110,22 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             val lastDone = prefs.getLong("LAST_DONE", 0)
 
             if (isSameDay(today, lastDone)) {
-                Toast.makeText(
-                    requireContext(),
-                    "Today's tasks already completed",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(requireContext(), "Today's tasks already completed", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
+            // Save reflection
+            val reflection = etReflection.text.toString()
+            prefs.edit().putString("REFLECTION_$currentDay", reflection).apply()
+
+            // Celebrate
+            val party = Party(
+                speed = 0f, maxSpeed = 30f, damping = 0.9f, spread = 360,
+                colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xbbf9b0),
+                emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
+                position = Position.Relative(0.5, 0.3)
+            )
+            konfettiView.start(party)
 
             prefs.edit()
                 .putInt("DAY", currentDay + 1)
@@ -88,57 +133,40 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 .putLong("LAST_DONE", today)
                 .apply()
 
-            Toast.makeText(
-                requireContext(),
-                "Day $currentDay completed. Come back tomorrow!",
-                Toast.LENGTH_LONG
-            ).show()
+            HapticUtil.success(it)
+            showMilestoneDialog(currentDay)
+            
+            // Update widget (impl later)
+            updateWidget()
 
-            loadHomeUI(view)
+            view.postDelayed({ if (isAdded) loadHomeUI(view) }, 1000)
         }
+    }
+
+    private fun updateReflectionVisibility(card: View, visible: Boolean) {
+        card.visibility = if (visible) View.VISIBLE else View.GONE
+    }
+
+    private fun updateWidget() {
+        // We will implement AppWidgetProvider next
     }
 
     private fun isSameDay(t1: Long, t2: Long): Boolean {
-        return t1 / (1000 * 60 * 60 * 24) ==
-                t2 / (1000 * 60 * 60 * 24)
+        return t1 / (1000 * 60 * 60 * 24) == t2 / (1000 * 60 * 60 * 24)
     }
-
-    private fun haptic(view: View) {
-        view.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP)
-    }
-
 
     private fun showMilestoneDialog(day: Int) {
         val message = when (day) {
-            7 -> "You completed 7 days!\nFoundation discipline unlocked 💪"
-            30 -> "30 days done!\nCore consistency built 🚀"
-            90 -> "90 days!\nAI/ML journey unlocked 🤖"
-            180 -> "180 days!\nYou are career-ready 🏆"
+            7 -> "7 days! Foundation built 💪"
+            30 -> "30 days! Habit solidified 🚀"
+            90 -> "90 days! You are unstoppable 🤖"
+            180 -> "180 days! Transformation complete 🏆"
             else -> return
         }
-
-        android.app.AlertDialog.Builder(requireContext())
-            .setTitle("🎉 Milestone Achieved")
+        com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
+            .setTitle("🎉 Milestone!")
             .setMessage(message)
-            .setPositiveButton("Awesome!") { _, _ -> }
+            .setPositiveButton("Awesome!", null)
             .show()
     }
-
-
-
-    private fun animateCheck(view: View) {
-        view.animate()
-            .scaleX(1.15f)
-            .scaleY(1.15f)
-            .setDuration(120)
-            .withEndAction {
-                view.animate()
-                    .scaleX(1f)
-                    .scaleY(1f)
-                    .setDuration(120)
-                    .start()
-            }
-            .start()
-    }
-
 }

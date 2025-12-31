@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Dark theme (auto-applied by system) -->
     <style name="Theme.Consistancy" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Dark colors handled automatically -->
+        <!-- Dark Brand Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorPrimaryContainer">@color/gradient_start</item>
+        <item name="colorOnPrimaryContainer">@color/primary</item>
+
+        <!-- Dark Surfaces -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- White icons for dark bg -->
+        <item name="android:windowBackground">@drawable/bg_main_gradient</item>
+        <item name="android:navigationBarColor">@color/gradient_end</item>
+
+        <!-- Typography Mapping -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Pro.HeadlineLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Pro.TitleMedium</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Pro.BodyLarge</item>
     </style>
 
 </resources>
