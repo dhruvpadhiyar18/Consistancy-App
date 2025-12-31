@@ -1,6 +1,6 @@
 # Privacy Policy for Consistancy
 
-Last updated: [ADD DATE]
+Last updated: 31-12-2025
 
 Consistancy respects your privacy. This Privacy Policy explains how we handle information when you use our app.
 
