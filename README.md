@@ -9,9 +9,14 @@ Built with a high-end **Glassmorphism UI**, the app focuses on the philosophy th
 ## 📱 Screenshots
 
 <p align="center">
-  <img src="https://github.com/dhruvpadhiyar18/Consistancy-App/raw/master/screenshots/home.png" width="30%" alt="Home Screen" />
-  <img src="https://github.com/dhruvpadhiyar18/Consistancy-App/raw/master/screenshots/tasks.png" width="30%" alt="Tasks Screen" />
-  <img src="https://github.com/dhruvpadhiyar18/Consistancy-App/raw/master/screenshots/progress.png" width="30%" alt="Progress Screen" />
+  <img width="1080" height="2400" alt="1  home" src="https://github.com/user-attachments/assets/92c2dd1e-1b63-41de-b70f-24927e1252ce" />
+
+  <img width="1080" height="2400" alt="2  daily task" src="https://github.com/user-attachments/assets/7fb475e4-2478-4a9a-8d22-20130a474f8e" />
+
+  <img width="1080" height="2400" alt="3  your journey" src="https://github.com/user-attachments/assets/49dbe6d9-b82a-405c-9154-9297baac799d" />
+
+  <img width="1080" height="2400" alt="4 settings" src="https://github.com/user-attachments/assets/e83fa0ba-2c8f-4472-9e00-7e81414fef5f" />
+
 </p>
 
 ---
