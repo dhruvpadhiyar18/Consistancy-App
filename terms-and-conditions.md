@@ -1,6 +1,6 @@
 # Terms and Conditions for Consistancy
 
-Last updated: 31-12-2025
+Last updated: 2 January 2026
 
 By using the Consistancy app, you agree to these Terms and Conditions.
 
