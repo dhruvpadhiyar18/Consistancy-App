@@ -29,4 +29,4 @@ We may suspend or terminate access if the app is misused.
 ## Contact Information
 For questions regarding these Terms, contact:
 
-Email: consistancy.app@gmail.com
+Email: dhruvgtech@gmail.com
