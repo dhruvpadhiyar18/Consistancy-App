@@ -31,4 +31,4 @@ We may update this Privacy Policy from time to time. Changes will be reflected o
 ## Contact Us
 If you have any questions about this Privacy Policy, contact us at:
 
-Email: consistancy.app@gmail.com
+Email: dhruvgtech@gmail.com
