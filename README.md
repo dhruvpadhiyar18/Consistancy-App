@@ -5,26 +5,24 @@
 
 ---
 
-## 📱 Screenshots
+## 📱 App Screenshots
 
-<<<<<<< HEAD
-  ![1 home](https://github.com/user-attachments/assets/2491d40a-6739-4942-80e3-f299fa36fd08)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2491d40a-6739-4942-80e3-f299fa36fd08" width="220" />
+  <img src="https://github.com/user-attachments/assets/2ed3f65f-456a-4587-9a30-8157fc5974cd" width="220" />
+  <img src="https://github.com/user-attachments/assets/ea68aa09-ac41-49f4-9dd7-f4eefddf9ce7" width="220" />
+</p>
 
-  ![2 tasks](https://github.com/user-attachments/assets/2ed3f65f-456a-4587-9a30-8157fc5974cd)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f2822a39-a845-4d23-a2a2-b231cb5483fc" width="220" />
+  <img src="https://github.com/user-attachments/assets/fb427fdf-3d32-4570-b7af-492b2e2ba04c" width="220" />
+</p>
 
-  ![3 progress](https://github.com/user-attachments/assets/ea68aa09-ac41-49f4-9dd7-f4eefddf9ce7)
-
-  ![4 setting](https://github.com/user-attachments/assets/f2822a39-a845-4d23-a2a2-b231cb5483fc)
-
-  ![5 quizee](https://github.com/user-attachments/assets/fb427fdf-3d32-4570-b7af-492b2e2ba04c)
-
-=======
 
 ---
 
 ## 🎯 The Philosophy
 Most learners fail not because they lack intelligence, but because they lack consistency. This app is built on the belief that **Consistency > Intensity**. By breaking down the massive fields of AI, Machine Learning, and Software Engineering into manageable daily steps, we eliminate burnout and build lasting habits.
->>>>>>> bda6868 (🚀 Final Professional Release: Added Daily Quizzes, Journey Log, and UI refinements)
 
 ---
 
