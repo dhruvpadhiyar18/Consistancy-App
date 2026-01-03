@@ -8,16 +8,16 @@
 ## 📱 Screenshots
 
 <<<<<<< HEAD
-<p align="center">
-  <img width="1080" height="2400" alt="1  home" src="https://github.com/user-attachments/assets/92c2dd1e-1b63-41de-b70f-24927e1252ce" />
+  ![1 home](https://github.com/user-attachments/assets/2491d40a-6739-4942-80e3-f299fa36fd08)
 
-  <img width="1080" height="2400" alt="2  daily task" src="https://github.com/user-attachments/assets/7fb475e4-2478-4a9a-8d22-20130a474f8e" />
+  ![2 tasks](https://github.com/user-attachments/assets/2ed3f65f-456a-4587-9a30-8157fc5974cd)
 
-  <img width="1080" height="2400" alt="3  your journey" src="https://github.com/user-attachments/assets/49dbe6d9-b82a-405c-9154-9297baac799d" />
+  ![3 progress](https://github.com/user-attachments/assets/ea68aa09-ac41-49f4-9dd7-f4eefddf9ce7)
 
-  <img width="1080" height="2400" alt="4 settings" src="https://github.com/user-attachments/assets/e83fa0ba-2c8f-4472-9e00-7e81414fef5f" />
+  ![4 setting](https://github.com/user-attachments/assets/f2822a39-a845-4d23-a2a2-b231cb5483fc)
 
-</p>
+  ![5 quizee](https://github.com/user-attachments/assets/fb427fdf-3d32-4570-b7af-492b2e2ba04c)
+
 =======
 
 ---
