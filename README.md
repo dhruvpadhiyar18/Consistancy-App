@@ -3,7 +3,6 @@
 
 **Consistancy** is a focused, minimal, and premium educational Android application designed to forge unbreakable daily discipline. Instead of overwhelming learners with endless content, Consistancy guides you through a curated **180-day journey** with a single rule: **Show up every day for just two tasks.**
 
----
 
 ## 📱 App Screenshots
 
@@ -18,8 +17,6 @@
   <img src="https://github.com/user-attachments/assets/fb427fdf-3d32-4570-b7af-492b2e2ba04c" width="220" />
 </p>
 
-
----
 
 ## 🎯 The Philosophy
 Most learners fail not because they lack intelligence, but because they lack consistency. This app is built on the belief that **Consistency > Intensity**. By breaking down the massive fields of AI, Machine Learning, and Software Engineering into manageable daily steps, we eliminate burnout and build lasting habits.
