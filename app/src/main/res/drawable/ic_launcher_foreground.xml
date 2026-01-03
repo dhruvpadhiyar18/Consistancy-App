@@ -5,33 +5,55 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- The Tech-Monogram Glyph -->
-    
-    <!-- Stylized Hexagonal 'C' (The Frame of Discipline) -->
+    <!-- THE CONSISTANCY LOOP -->
+    <!-- Represents daily repetition (circle) and streak fire (center) -->
+
+    <!-- Circular Progress Arrows (The Cycle) -->
     <path
-        android:pathData="M74,34 L54,22 L34,34 L34,74 L54,86 L74,74"
+        android:pathData="M54,24 A30,30 0 0 1 84,54"
         android:strokeColor="#FFFFFF"
-        android:strokeWidth="6"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-
-    <!-- The Neural Connection (AI Roadmap Path) -->
-    <path
-        android:pathData="M54,54 L74,34"
-        android:strokeColor="@color/accent"
-        android:strokeWidth="4"
+        android:strokeWidth="8"
         android:strokeLineCap="round" />
-
-    <!-- The Central Core (The User's Focus) -->
-    <path
-        android:pathData="M48,54 A6,6 0 1 1 60,54 A6,6 0 1 1 48,54"
-        android:fillColor="@color/accent" />
-
-    <!-- High-Tech Detail (Outer Orbit segment) -->
     <path
         android:pathData="M84,54 A30,30 0 0 1 54,84"
-        android:strokeColor="#40FFFFFF"
-        android:strokeWidth="2"
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="8"
         android:strokeLineCap="round" />
+    <path
+        android:pathData="M54,84 A30,30 0 0 1 24,54"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="8"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M24,54 A30,30 0 0 1 54,24"
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="8"
+        android:strokeLineCap="round" />
+
+    <!-- Arrow Heads for the Cycle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,24 L50,18 L58,18 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,84 L58,90 L50,90 Z" />
+
+    <!-- THE STREAK FIRE (Centered) -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M54,35 C54,35 64,45 64,55 C64,65 54,75 54,75 C54,75 44,65 44,55 C44,45 54,35 54,35 Z" />
+    
+    <!-- INNER FIRE CORE -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,45 C54,45 59,50 59,55 C59,60 54,65 54,65 C54,65 49,60 49,55 C49,50 54,45 54,45 Z" />
+
+    <!-- THE TASK CHECKMARK (The result) -->
+    <path
+        android:pathData="M46,55 L52,61 L62,49"
+        android:strokeColor="#000000"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 
 </vector>

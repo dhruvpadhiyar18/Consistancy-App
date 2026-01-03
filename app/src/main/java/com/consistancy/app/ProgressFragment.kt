@@ -54,6 +54,9 @@ class ProgressFragment : Fragment(R.layout.fragment_progress) {
         val percent = (currentDay * 100) / totalDays
         tvPercent.text = "$percent%"
 
+        // NEW: Load Analytics
+        loadAnalytics(view)
+
         // Unlock Trophies
         if (currentDay >= 7) trophy1.alpha = 1.0f
         if (currentDay >= 30) trophy2.alpha = 1.0f
@@ -63,6 +66,25 @@ class ProgressFragment : Fragment(R.layout.fragment_progress) {
         btnShare.setOnClickListener {
             shareProgress(shareCard)
         }
+    }
+
+    private fun loadAnalytics(view: View) {
+        val tvStats = view.findViewById<TextView>(R.id.tvStatsLabel) ?: return // Safeguard
+        
+        val totalAttempted = prefs.getInt("QUIZ_TOTAL_ATTEMPTED", 0)
+        val totalScore = prefs.getInt("QUIZ_TOTAL_SCORE", 0)
+        
+        // Total possible score: 2 questions per day
+        val totalPossible = totalAttempted * 2
+        val accuracy = if (totalPossible > 0) (totalScore * 100) / totalPossible else 0
+        
+        val weekendAttempted = prefs.getInt("WEEKEND_TEST_ATTEMPTED", 0)
+        val weekendTotalScore = prefs.getInt("WEEKEND_TEST_TOTAL_SCORE", 0)
+        
+        // Update stats UI (IDs added in XML)
+        view.findViewById<TextView>(R.id.tvQuizAccuracy)?.text = "$accuracy%"
+        view.findViewById<TextView>(R.id.tvQuizzesDone)?.text = totalAttempted.toString()
+        view.findViewById<TextView>(R.id.tvWeekendScore)?.text = weekendTotalScore.toString()
     }
 
     private fun shareProgress(view: View) {

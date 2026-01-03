@@ -1,32 +1,104 @@
-# Terms and Conditions for Consistancy
+# Terms & Conditions
+**Consistancy – 180 Days to AI & Discipline Mastery**
 
+<<<<<<< HEAD
 Last updated: 2 January 2026
+=======
+Last Updated: January 2026
+>>>>>>> bda6868 (🚀 Final Professional Release: Added Daily Quizzes, Journey Log, and UI refinements)
 
-By using the Consistancy app, you agree to these Terms and Conditions.
+---
 
-## Purpose of the App
-Consistancy is an educational app designed to help users build daily learning habits through guided tasks and external resources.
+## 1. Acceptance of Terms
 
-## Educational Use Only
-All content provided is for learning purposes only. We do not guarantee specific outcomes, job placement, or results.
+By installing or using the Consistancy mobile application, you agree to these Terms & Conditions. If you do not agree, please discontinue use of the app.
 
-## External Resources
-The app may contain links to third-party websites and platforms.
-We do not control or own these resources and are not responsible for their content or availability.
+---
 
-## User Responsibility
-Users are responsible for how they use the information provided in the app.
+## 2. Purpose of the App
 
-## App Changes
-We reserve the right to update, modify, or remove features of the app at any time without prior notice.
+Consistancy is an **educational self-discipline and learning tracker**, designed to guide users through a structured 180-day roadmap covering:
 
-## Limitation of Liability
-Consistancy is not responsible for any loss, damage, or issues arising from the use of the app or linked external resources.
+- Python Foundations
+- Machine Learning & Data Science
+- Deep Learning, NLP & Computer Vision
+- MLOps, Projects & Career Preparation
 
-## Termination
-We may suspend or terminate access if the app is misused.
+The app is intended for **self-learners** and **does not guarantee employment or certification**.
 
-## Contact Information
-For questions regarding these Terms, contact:
+---
 
+<<<<<<< HEAD
 Email: dhruvgtech@gmail.com
+=======
+## 3. Educational Disclaimer
+
+- The content provided is for **learning guidance only**.
+- Results depend entirely on the user’s effort and consistency.
+- We do **not guarantee** job placement, income, or skill mastery.
+
+---
+
+## 4. Quizzes & Progress Evaluation
+
+- Daily tasks require completion of short MCQ quizzes to validate learning.
+- Weekly progress reviews occur every **7 completed in-app days**, not based on calendar weeks.
+- Quiz results are stored locally and used only for progress tracking.
+
+---
+
+## 5. Data Responsibility
+
+Since Consistancy does not use cloud storage:
+- Users are responsible for keeping the app installed to preserve progress.
+- Deleting the app permanently removes all stored data.
+- We cannot restore lost data under any circumstances.
+
+---
+
+## 6. Third-Party Content
+
+Consistancy may link to external resources such as:
+- YouTube videos
+- Documentation websites
+- Educational blogs
+
+We are **not responsible** if:
+- Links change or stop working
+- External content is modified
+- External platforms collect data under their own policies
+
+---
+
+## 7. App Availability
+
+We reserve the right to:
+- Update or modify features
+- Temporarily or permanently discontinue the app
+- Change roadmap content without prior notice
+
+---
+
+## 8. Limitation of Liability
+
+Consistancy and its developer shall not be liable for:
+- Loss of data due to app removal
+- Learning outcomes or missed goals
+- External content issues
+
+Use of the app is entirely at the user’s own risk.
+
+---
+
+## 9. Governing Law
+
+These Terms shall be governed by the laws applicable in India.
+
+---
+
+## 10. Contact Information
+
+For questions related to these Terms & Conditions, contact:
+
+📧 **dhruvgtech@gmail.com**
+>>>>>>> bda6868 (🚀 Final Professional Release: Added Daily Quizzes, Journey Log, and UI refinements)

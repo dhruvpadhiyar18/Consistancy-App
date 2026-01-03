@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Modern Pro Palette -->
-    <color name="primary">#6366F1</color> <!-- Indigo 500 -->
-    <color name="primaryDark">#4338CA</color> <!-- Indigo 700 -->
-    <color name="primaryLight">#818CF8</color> <!-- Indigo 400 -->
-    <color name="accent">#06B6D4</color> <!-- Cyan 500 -->
+    <!-- ZEN TECH THEME - RAW PRECISION -->
+    <color name="primary">#D9FF00</color> <!-- Electric Lime -->
+    <color name="primaryDark">#B8CC00</color>
+    <color name="primaryLight">#E6FF4D</color>
+    <color name="accent">#D9FF00</color>
     
-    <color name="gradient_start">#EEF2FF</color> <!-- Indigo 50 -->
-    <color name="gradient_end">#E0F2FE</color> <!-- Cyan 50 -->
+    <!-- Deep Neutral Surfaces -->
+    <color name="gradient_start">#0A0A0A</color> <!-- Near Black -->
+    <color name="gradient_end">#171717</color> <!-- Deep Charcoal -->
+    <color name="background">#0A0A0A</color>
+    <color name="surface">#121212</color>
+    
+    <!-- Glass Surface (Updated for Zen Tech) -->
+    <color name="glass_white">#0DFFFFFF</color> <!-- 5% White - Very subtle -->
+    <color name="glass_stroke">#1AFFFFFF</color> <!-- 10% White edge -->
+    <color name="glass_shadow">#000000</color>
+    
+    <!-- High Contrast Text -->
+    <color name="text_title">#FFFFFF</color>
+    <color name="text_body">#A3A3A3</color>
+    <color name="text_muted">#525252</color>
+    <color name="text_on_primary">#000000</color> <!-- Black text on Lime buttons -->
 
-    <!-- Glass Surface -->
-    <color name="glass_white">#CCFFFFFF</color> <!-- 80% White -->
-    <color name="glass_stroke">#FFFFFF</color> <!-- Pure white for edge highlights -->
-    <color name="glass_shadow">#1A6366F1</color> <!-- Subtle shadow tint -->
-    
     <!-- Legacy compatibility -->
-    <color name="card_bg">#FFFFFF</color>
-
-    <!-- Text Hierarchy -->
-    <color name="text_title">#1E293B</color> <!-- Slate 800 -->
-    <color name="text_body">#475569</color> <!-- Slate 600 -->
-    <color name="text_muted">#94A3B8</color> <!-- Slate 400 -->
-    <color name="text_on_primary">#FFFFFF</color>
+    <color name="card_bg">#121212</color>
 
     <!-- UI Elements -->
-    <color name="divider">#F1F5F9</color>
-    <color name="success">#10B981</color>
-    <color name="warning">#F59E0B</color>
+    <color name="divider">#262626</color>
+    <color name="success">#D9FF00</color> <!-- Lime is the success color here -->
+    <color name="warning">#FACC15</color>
     <color name="error">#EF4444</color>
     
-    <!-- Transparent helpers -->
-    <color name="transparent_primary">#1A6366F1</color>
+    <color name="transparent_primary">#1AD9FF00</color>
 </resources>
